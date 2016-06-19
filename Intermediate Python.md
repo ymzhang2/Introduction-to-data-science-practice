@@ -43,5 +43,5 @@ sorted(family,key=len)
 ```
 * Given that: fruits = ['Apple', 'Banana', 'Cherry']. Write a list comprehension that returns: ['A', 'B', 'C']
 ```python
-[fruit[0].upper() for fruit in fruits]
+[fruit[0] for fruit in fruits]
 ```
