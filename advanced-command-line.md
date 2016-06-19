@@ -66,7 +66,7 @@
 * Because lines must be successive to be counted as identical, you will usually use `sort` before `uniq`.
 
 #### Command Line Tasks
-1. Look at the head and the tail of **chipotle.tsv** in the **data** subdirectory of this repo. Think for a minute about how the data is structured. What do you think each column means? What do you think each row means? Tell me! (If you're unsure, look at more of the file contents.)
+* Look at the head and the tail of **chipotle.tsv** in the **data** subdirectory of this repo. Think for a minute about how the data is structured. What do you think each column means? What do you think each row means? Tell me! (If you're unsure, look at more of the file contents.)
 ```
 cd ~/Desktop
 ls
@@ -78,14 +78,14 @@ head chipotle.tsv
 tail chipotle
 ```
 
-2. How many orders do there appear to be?
+* How many orders do there appear to be?
 There are 1834 orders (since 1834 is the highest **order_id** number).
 
-3. How many lines are in this file?
+* How many lines are in this file?
 ```
 wc -l chipotle.tsv
 ```
-4. Which burrito is more popular, steak or chicken?
+* Which burrito is more popular, steak or chicken?
 ```
 man grep
 man wc
@@ -95,7 +95,7 @@ grep -ci 'chicken burrito' chipotle.tsv
 grep -ci 'chicken burrito'
 ```
 Therefore, chicken burrito is more popular than steak burrito
-5. Do chicken burritos more often have black beans or pinto beans?
+* Do chicken burritos more often have black beans or pinto beans?
 ```
 grep -i 'chicken burrito' chipotle.tsv | grep -i 'black bean' | wc -l
 grep -i 'chicken burrito' chipotle.tsv | grep -i 'pinto bean' | wc -l
@@ -106,9 +106,9 @@ Therefore, chicken burritos with black bean is more pupular.
 cd ..
 find . -name *.?sv
 ```
-7. Count the approximate number of occurrences of the word "dictionary" (regardless of case) across all files in the DAT8 repo.
+* Count the approximate number of occurrences of the word "dictionary" (regardless of case) across all files in the DAT8 repo.
 ```
 cd data
 grep -ir 'dictionary' . | wc -l
 ```
-8. **Optional:** Use the the command line to discover something "interesting" about the Chipotle data. Try using the commands from the "advanced" section!
+* **Optional:** Use the the command line to discover something "interesting" about the Chipotle data. Try using the commands from the "advanced" section!
