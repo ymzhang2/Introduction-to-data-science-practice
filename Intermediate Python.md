@@ -51,19 +51,19 @@ sorted(family,key=len)
 ```python 
 family = {'dad':'Homer', 'mom':'Marge', 'size':2}
 ```
-1. Print the name of the mom.
+* Print the name of the mom.
 ```python 
 family['mom']
 ```
-2. Change the size to 5.
+* Change the size to 5.
 ```python
 family['size']=5
 ```
-3. Add 'Maggie' to the list of kids.
+* Add 'Maggie' to the list of kids.
 ```python 
 family.append('Maggie')
 ```
-4. Fix 'bart' and 'lisa' so that the first letter is capitalized.
+* Fix 'bart' and 'lisa' so that the first letter is capitalized.
 Bonus: Do this last step using a list comprehension.
 ```python 
 family['kids']=[lisa,bart]
