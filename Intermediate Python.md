@@ -1,4 +1,4 @@
-### Exercises1
+### EXERCUSE 1
 
 * Create a list of the first names of your family members.
 ```python
@@ -32,3 +32,10 @@ sorted(family, reverse=True)
 sorted(family,key=len)
 ```
 
+###EXERCISE 2:
+* Given that: letters = ['a', 'b', 'c']
+  Write a list comprehension that returns: ['A', 'B', 'C']
+* Given that: word = 'abc'
+  Write a list comprehension that returns: ['A', 'B', 'C']
+*Given that: fruits = ['Apple', 'Banana', 'Cherry']
+ Write a list comprehension that returns: ['A', 'B', 'C']
