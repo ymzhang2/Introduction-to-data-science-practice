@@ -1,5 +1,5 @@
 ### EXERCUSE 1
-
+**List & String**
 * Create a list of the first names of your family members.
 ```python
 family= ['Yiman','Sen','Shuhua','Zhoulong']
@@ -33,6 +33,7 @@ sorted(family,key=len)
 ```
 
 ###EXERCISE 2:
+**FOR LOOPS AND LIST COMPREHENSIONS**
 * Given that: letters = ['a', 'b', 'c']. Write a list comprehension that returns: ['A', 'B', 'C']
 ```python
 [letter.upper() for letter in letters]
