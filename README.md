@@ -1,40 +1,5 @@
-# Practice-Introduction-to-Data-Science
 
-## Introduction to the Command Line
-
-This document outlines basic usage of the command line. For Linux and Mac users, these commands should work in **Terminal**. For Windows users, these should work in **Git Bash**.
-
-### What is the command line?
-
-The Command Line Interface (CLI) is a way of interacting with your computer using text-based commands. This is different from the way most people interact with their computers, using their mouse and a Graphical User Interface (GUI).
-
-### Why should I use it?
-
-Once you become comfortable with the basics, it can be a more powerful way to use your computer. You're able to do many things more quickly and programatically.
-
-### General format for commands
-
-`<command> -<options> <arguments>`
-* `<command>` is the action we want the computer to take
-* `<options>` (or "flags") modify the behavior of the command
-* `<arguments>` are the things we want the command to act on
-
-For Linux and Mac users, you can get view the **man**ual for a command by typing `man <command>`. For Windows users, you can view the help page by typing `<command> --help`.
-
-### Tips
-
-* If there are spaces in file or directory names, use a "\" to "escape" the space characters, or just put the entire file path in quotes.
-* After typing the first few letters of a file or directory name, you can hit Tab to auto-complete the name. (This often auto-escapes spaces for you.)
-* Use the up and down arrow keys to navigate previously entered commands.
-
-### File paths
-
-A **relative file path** specifies the path to a file, taking into account your current working directory. For example, if you were to give someone "relative" directions to your house, you would give them directions from their current location (the relative path from where they are to where you are).
-
-An **absolute file path** specifies the complete path to a file, ignoring your current working directory. For example, if you were to give someone "absolute" directions to your house, you would start by telling them to be on earth, then go to your continent, then go to your country, then go to your region, etc.
-
-
-### Basic commands
+## Basic commands
 
 ##### `pwd`
 * **p**rints **w**orking **d**irectory (the directory you are currently in)
