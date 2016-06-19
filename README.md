@@ -84,14 +84,58 @@ An **absolute file path** specifies the complete path to a file, ignoring your c
     pwd
    ```
     * List your files and subdirectories (they should match what you see on your Desktop).
+    ```python
+    ls
+    ```
 * Create a directory called `project`.
+   ```python
+   mkdir project ~/Desktop
+   ```
 * Navigate to the `project` directory, and create the following files in it: `draft_paper.md`, `plot1.png`, `plot2.png`.
+  ```python
+  cd ~/Desktop/project
+  touch draft_paper.md plot1.png plot2.png
+  ```
 * Create two subdirectories in the `project` directory: `code`, `data`
+ ```python
+ mkdir code data ~/Desktop/project
+ ```
 * Navigate to the `code` subdirectory, and create the following files in it: `processing.py`, `exploration.py`.
+```python
+cd ~/Desktop/project/code
+touch processing.py
+touch exploration.py
+```
+
 * Navigate to the `data` subdirectory, and create the following files in it: `original.csv`, `clean.csv`, `other.csv`.
+```python
+cd ~/Desktop/project/data
+touch original.csv clean.csv other.csv
+```
 * Make a copy of `draft_paper.md` called `final_paper.md`.
+```python
+cd ..
+cp draft_paper.md final_paper.md
+```
 * Rename `plot1.png` as `scatterplot.png`, and rename `plot2.png` as `histogram.png`.
+```python
+mv plot1.png scatterplot.png
+mv plot2.png histogram.png
+```
 * Create a subdirectory called `viz`, and then move `scatterplot.png` and `histogram.png` to `viz`.
+```python
+mkdir viz
+mv scatterplot.png ~/viz
+mv histogram.png ~/viz
+```
 * Delete `other.csv` from the `data` subdirectory.
-* Navigate back to `project`, and then print out (with a single command) all of its files, subdirectories, and the contents of those subdirectories. The output should look similar to [this image](../other/02_exercise_output.png).
-* Viewing this [collapsible tree diagram](../other/02_file_tree.png) may help you to visualize the directory structure that we have created.
+```python
+rm other.csv ~/Desktop/data
+```
+* Navigate back to `project`, and then print out (with a single command) all of its files, subdirectories, and the contents of those subdirectories. 
+```python
+cd ~/Desktop/project
+ls
+```
+
+
