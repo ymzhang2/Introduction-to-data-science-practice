@@ -37,5 +37,5 @@ sorted(family,key=len)
   Write a list comprehension that returns: ['A', 'B', 'C']
 * Given that: word = 'abc'
   Write a list comprehension that returns: ['A', 'B', 'C']
-*Given that: fruits = ['Apple', 'Banana', 'Cherry']
+* Given that: fruits = ['Apple', 'Banana', 'Cherry']
  Write a list comprehension that returns: ['A', 'B', 'C']
