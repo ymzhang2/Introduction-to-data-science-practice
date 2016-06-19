@@ -22,12 +22,13 @@ family.append('Zhuzhu')
 ```
 * Change the name of the new person to lowercase using the string method 'lower'.
 ```python
-family[-1]=family[-1].lower()
+family[-1] = family[-1].lower()
 ```
 * Sort the list in reverse alphabetical order.
 Bonus: Sort the list by the length of the names (shortest to longest).
 ```python
 sorted(family)
+sorted(family, reverse=True)
 sorted(family,key=len)
 ```
 
