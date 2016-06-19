@@ -48,15 +48,25 @@ sorted(family,key=len)
 ```
 ###EXERCISE 3:
 **DICTIONARIES**
-`family = {'dad':'Homer', 'mom':'Marge', 'size':2}`
+```python 
+family = {'dad':'Homer', 'mom':'Marge', 'size':2}
+```
 1. Print the name of the mom.
-`family['mom']`
+```python 
+family['mom']
+```
 2. Change the size to 5.
+```python
 family['size']=5
+```
 3. Add 'Maggie' to the list of kids.
-`family.append('Maggie')`
+```python 
+family.append('Maggie')
+```
 4. Fix 'bart' and 'lisa' so that the first letter is capitalized.
 Bonus: Do this last step using a list comprehension.
-`family['kids']=[lisa,bart]`
-`family['kids']=[kid[0].upper()+kid[1:].lower() for kid in family['kids']]`
-'family['kids']=[kid.capitalize() for kid in family['kids']]'
+```python 
+family['kids']=[lisa,bart]
+family['kids']=[kid[0].upper()+kid[1:].lower() for kid in family['kids']]
+family['kids']=[kid.capitalize() for kid in family['kids']]
+```
