@@ -33,9 +33,15 @@ sorted(family,key=len)
 ```
 
 ###EXERCISE 2:
-* Given that: letters = ['a', 'b', 'c']
-  Write a list comprehension that returns: ['A', 'B', 'C']
-* Given that: word = 'abc'
-  Write a list comprehension that returns: ['A', 'B', 'C']
-* Given that: fruits = ['Apple', 'Banana', 'Cherry']
- Write a list comprehension that returns: ['A', 'B', 'C']
+* Given that: letters = ['a', 'b', 'c']. Write a list comprehension that returns: ['A', 'B', 'C']
+```python
+[letter.upper() for letter in letters]
+```
+* Given that: word = 'abc'. Write a list comprehension that returns: ['A', 'B', 'C']
+```python
+[letters.upper() for letter in word]
+```
+* Given that: fruits = ['Apple', 'Banana', 'Cherry']. Write a list comprehension that returns: ['A', 'B', 'C']
+```python
+[fruit[0].upper() for fruit in fruits]
+```
