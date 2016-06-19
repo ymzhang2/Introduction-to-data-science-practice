@@ -79,9 +79,36 @@ tail chipotle
 ```
 
 2. How many orders do there appear to be?
+There are 1834 orders (since 1834 is the highest **order_id** number).
+
 3. How many lines are in this file?
+```
+wc -l chipotle.tsv
+```
 4. Which burrito is more popular, steak or chicken?
+```
+man grep
+man wc
+grep -i 'steak burrito' chipotle.tsv | wc -l
+grep -i 'chicken burrito' chipotle.tsv | wc -l
+grep -ci 'chicken burrito' chipotle.tsv
+grep -ci 'chicken burrito'
+```
+Therefore, chicken burrito is more popular than steak burrito
 5. Do chicken burritos more often have black beans or pinto beans?
+```
+grep -i 'chicken burrito' chipotle.tsv | grep -i 'black bean' | wc -l
+grep -i 'chicken burrito' chipotle.tsv | grep -i 'pinto bean' | wc -l
+```
+Therefore, chicken burritos with black bean is more pupular. 
 6. Make a list of all of the CSV or TSV files in the DAT8 repo (using a single command). Think about how wildcard characters can help you with this task.
+```
+cd ..
+find . -name *.?sv
+```
 7. Count the approximate number of occurrences of the word "dictionary" (regardless of case) across all files in the DAT8 repo.
+```
+cd data
+grep -ir 'dictionary' . | wc -l
+```
 8. **Optional:** Use the the command line to discover something "interesting" about the Chipotle data. Try using the commands from the "advanced" section!
