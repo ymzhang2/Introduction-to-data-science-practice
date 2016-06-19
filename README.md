@@ -80,9 +80,9 @@ An **absolute file path** specifies the complete path to a file, ignoring your c
 * Open your command line interface.
 * Navigate to your Desktop, and confirm you are there:
     * Print your working directory (it should end with `Desktop`).
-       * ```python
-       * pwd
-       * ```
+    ```python
+    pwd
+   ```
     * List your files and subdirectories (they should match what you see on your Desktop).
 * Create a directory called `project`.
 * Navigate to the `project` directory, and create the following files in it: `draft_paper.md`, `plot1.png`, `plot2.png`.
