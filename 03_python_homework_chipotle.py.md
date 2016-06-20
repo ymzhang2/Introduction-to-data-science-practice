@@ -54,4 +54,10 @@ the values represent the total number of orders.
 Expected output: {'Chips and Roasted Chili-Corn Salsa': 18, ... }
 Note: Please take the 'quantity' column into account!
 Optional: Learn how to use 'defaultdict' to simplify your code.
-
+```python
+from collections import defaultdict
+chip=defaultdict(int)
+for row in data:
+    if 'Chip' in row[2]:
+        chip[row[2]]+=int(row[1])
+```
