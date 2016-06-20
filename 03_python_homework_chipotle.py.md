@@ -12,9 +12,10 @@ with open('/Users/yimanzhang/Desktop/AT8-master/data/chipotle.csv') as f:
     file_nested_list=[row.split('/t') for row in f]
 ```
 **PART 2**: Separate 'file_nested_list' into the 'header' and the 'data'.
+```python
 header=file_nested_list[0]
 data=file_nested_list[1:]
-
+```
 #####INTERMEDIATE LEVEL
 **PART 3**: Calculate the average price of an order.
 Hint: Examine the data to see if the 'quantity' column is relevant to this calculation.
@@ -24,7 +25,7 @@ price=[float(row[-1][1:-1]) for row in data]
 order_num=len(set([row[0] for row in data]))
 avg_price=round(sum(price)/order_num,2)
 ```
-#####INTERMEDIATE LEVEL
+
 **PART 4**: Create a list (or set) of all unique sodas and soft drinks that they sell.
 Note: Just look for 'Canned Soda' and 'Canned Soft Drink', and ignore other drinks like 'Izze'.
 ```python
@@ -47,7 +48,7 @@ burrito_count=len([row[3] for row in data if 'Burrito' in row[2]])
 avg_topping_num=round(topping_count/burrito_count,2)
 avg_topping_num
 ```
-#####ADVANCED LEVEL
+
 **PART 6**: Create a dictionary in which the keys represent chip orders and
 the values represent the total number of orders.
 Expected output: {'Chips and Roasted Chili-Corn Salsa': 18, ... }
