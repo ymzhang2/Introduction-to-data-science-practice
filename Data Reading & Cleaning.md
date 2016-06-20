@@ -1,7 +1,7 @@
 ## Homework 
-
-
 ```python
+#Lesson on file reading using Airline Safety Data
+#https://github.com/fivethirtyeight/data/tree/master/airline-safety
 f = open('/Users/yimanzhang/Desktop/DAT8-master/data/airlines.csv')
 file_string=f.read()
 file_string
@@ -161,5 +161,92 @@ data
 
 
 ```python
-
+##1. Create a list containing the average number of incidents per year for each airline.
+avg=[round(int(row[2])+int(row[5])/float(30),2) for row in data]
 ```
+```python
+#Create a list of airline names (without the star)
+#Create a list (of the same length) that contains 1 if there's a star and 0 if not.
+star=[]
+airlines=[]
+for row in data:
+    if row[0][-1]=='*':
+        star.append(1)
+        airlines.append(row[0][:-1])
+    else: 
+        star.append(0)
+        airlines.append(row[0])
+        
+```
+
+
+```python
+#Create a dictionary in which the key is the airline name (without the star)
+#   and the value is the average number of incidents.
+airline_incidents=dict(zip(airlines,avg))
+```
+
+
+```python
+airline_incidents
+```
+
+
+
+
+    {'Aer Lingus': 2.0,
+     'Aeroflot': 76.2,
+     'Aerolineas Argentinas': 6.03,
+     'Aeromexico': 3.17,
+     'Air Canada': 2.07,
+     'Air France': 14.2,
+     'Air India': 2.13,
+     'Air New Zealand': 3.17,
+     'Alaska Airlines': 5.17,
+     'Alitalia': 7.13,
+     'All Nippon Airways': 3.23,
+     'American': 21.57,
+     'Austrian Airlines': 1.03,
+     'Avianca': 5.0,
+     'British Airways': 4.2,
+     'COPA': 3.0,
+     'Cathay Pacific': 0.07,
+     'China Airlines': 12.07,
+     'Condor': 2.0,
+     'Delta / Northwest': 24.8,
+     'Egyptair': 8.13,
+     'El Al': 1.03,
+     'Ethiopian Airlines': 25.17,
+     'Finnair': 1.0,
+     'Garuda Indonesia': 10.13,
+     'Gulf Air': 1.1,
+     'Hawaiian Airlines': 0.03,
+     'Iberia': 4.17,
+     'Japan Airlines': 3.0,
+     'KLM': 7.03,
+     'Kenya Airways': 2.07,
+     'Korean Air': 12.03,
+     'LAN Airlines': 3.0,
+     'Lufthansa': 6.1,
+     'Malaysia Airlines': 3.1,
+     'Pakistan International': 8.33,
+     'Philippine Airlines': 7.07,
+     'Qantas': 1.17,
+     'Royal Air Maroc': 5.1,
+     'SAS': 5.2,
+     'SWISS': 2.1,
+     'Saudi Arabian': 7.37,
+     'Singapore Airlines': 2.07,
+     'South African': 2.03,
+     'Southwest Airlines': 1.27,
+     'Sri Lankan / AirLanka': 2.13,
+     'TACA': 3.03,
+     'TAM': 8.23,
+     'TAP - Air Portugal': 0.0,
+     'Thai Airways': 8.07,
+     'Turkish Airlines': 8.27,
+     'US Airways / America West': 16.37,
+     'United / Continental': 19.47,
+     'Vietnam Airlines': 7.03,
+     'Virgin Atlantic': 1.0,
+     'Xiamen Airlines': 9.07}
