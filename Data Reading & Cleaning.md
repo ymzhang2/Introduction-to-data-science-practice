@@ -1,4 +1,4 @@
-## Homework 
+## Practice
 ```python
 #Lesson on file reading using Airline Safety Data
 #https://github.com/fivethirtyeight/data/tree/master/airline-safety
